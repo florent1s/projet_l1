@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="description" content="index du projet de PW">
+        <!--<meta name="keywords" content="">-->
+        <meta name="author" content="Florent">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Rendez la monnaie</title>
+    </head>
+    <body>
+        <header>
+            <h1>Rendez-la monnaie !</h1>
+        </header>
+        <form class="suivant" action="" method="post">
+            <input class="button" id="btn_next" type="button" value="Au suivant !">
+        </form>
+        <p id = "info">
+            Client n°: <span id="client_nb">1</span>
+            (raté(s): <span id="error_count">0</span>)<br>
+            Total dû: <span id="to_pay"></span><br>
+            Payé: <span id="payed"></span><br>
+            Statut: <span id="state"></span>
+        </p>
+        <form class="" action="" method="post">
+            <input class="button" id="open_drawer_btn" type="button" value="Ouvrir le tiroir caisse">
+        </form>
+        <div id="drawer">
+            <form class="money" action="" method="post">
+                <input class="ticket" type="button" id="20" value="20">
+                <input class="ticket" type="button" id="10" value="10">
+                <input class="ticket" type="button" id="5" value="5"><br>
+                <input class="coin" type="button" id="2" value="2">
+                <input class="coin" type="button" id="1" value="1">
+                <input class="coin" type="button" id="0.50" value="0.50">
+                <input class="coin" type="button" id="0.20" value="0.20">
+                <input class="coin" type="button" id="0.10" value="0.10">
+            </form>
+            <p>Monnaie rendue: <span id="change">0</span></p>
+            <form id="give" action="" method="post">
+                <input class="button" type="button" id="give_money" value="Rendre la monnaie">
+            </form>
+        </div>
+        <footer>
+            <p>Projet PW S2P 2020 - "Rendez la monnaie"</p>
+        </footer>
+    </body>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</html>
